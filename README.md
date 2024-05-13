@@ -9,7 +9,7 @@ This data engineering project leverages a real-world retail dataset to analyze d
 The project involves a series of ETL jobs programmed using Python, SQL, Airflow, and Spark. These pipelines download data from an AWS S3 bucket, perform various manipulations, and then upload the refined dataset to another location within the same AWS S3 bucket for advanced analytics.
 
 
-# Dataset of choice
+# Dataset of Choice
 The dataset chosen for this project consists of a series of tables provided by the Brazilian e-commerce company, Olist."
 
 
