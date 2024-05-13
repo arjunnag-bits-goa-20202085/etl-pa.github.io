@@ -1,19 +1,17 @@
-# ETL-Pipeline-using-Airflow-and-AWS-EMR-Cluster
-I built an ETL pipeline using Airflow that accomplishes the following: Downloads data from an AWS S3 bucket, Triggers a Spark/Spark SQL job in AWS EMR cluster remotely on the downloaded data producing a cleaned-up dataset of delivery deadline missing orders and then uploads the cleaned-up dataset back to the same S3 bucket in a folder primed for higher level analytics
+# ETL Pipeline Using Airflow and AWS EMR Cluster
+I developed an ETL pipeline using Airflow that performs the following tasks: It downloads data from an AWS S3 bucket, triggers a remote Spark/Spark SQL job on an AWS EMR cluster to process the downloaded data, and generates a cleaned dataset highlighting orders missing delivery deadlines. This cleaned dataset is then uploaded back to the same S3 bucket, organized in a folder designed for advanced analytics."
 
-# Problem statement
-Retailers in the current landscape are adapting to the digital age. Digital retail behemoths have carved out substantial market shares in the online space at the same time that traditional retail stores are broadly in decline. In this time of digital flux, an omni-channel retail approach is necessary to keep pace. This is especially true for retailers that have invested in an extensive brick-and-mortar store portfolio or have strong relationships with brick-and-mortar partners.
+# Problem Statement
+Retailers in the current landscape are adapting to the digital age. Digital retail giants have carved out substantial market shares online, while traditional retail stores are generally in decline. In this era of digital transformation, adopting an omni-channel retail strategy is essential to stay competitive. This is particularly crucial for retailers with a large network of brick-and-mortar stores or those with strong ties to physical retail partners.
 
-This data engineering project uses a real-world retail dataset to explore delivery performance at scale. The primary concern of data engineering efforts in this project is to create a strong foundation on which data analytics and modelling may be applied as well as provide summary reports for daily ingestion by decision makers.
+This data engineering project leverages a real-world retail dataset to analyze delivery performance on a large scale. The primary objective of the data engineering efforts in this project is to establish a robust foundation for data analytics and modelling, as well as to provide daily summary reports for decision-makers.
 
-A series of ETL jobs are programmed as part of this project using python, SQL, Airflow, and Spark to build pipelines that download data from an AWS S3 bucket, apply some manipulations, and then load the cleaned-up data set into another location on the same AWS S3 bucket for higher level analytics.
+The project involves a series of ETL jobs programmed using Python, SQL, Airflow, and Spark. These pipelines download data from an AWS S3 bucket, perform various manipulations, and then upload the refined dataset to another location within the same AWS S3 bucket for advanced analytics.
 
 
 # Dataset of choice
-The dataset of choice for this project is a series of tables provided by the Brazilian Ecommerce company Olist.
+The dataset chosen for this project consists of a series of tables provided by the Brazilian e-commerce company, Olist."
 
 
 # Methodology
-Here, I built an ETL pipeline using airflow in order to load the required data and script into S3 data lake.
-Then we scheduled the Dag in order to run the script into the EMR cluster by adding job flow steps using boto3 library.
-So here we scuccessfully incorporated AWS EMR into the pipeline to run the Spark job on a cluster instead of locally on a machine.
+I developed an ETL pipeline using Airflow to load the required data and scripts into an S3 data lake. I then scheduled the DAG to run the script on the EMR cluster by adding job flow steps with the boto3 library. This setup successfully integrated AWS EMR into the pipeline, allowing the Spark job to run on a cluster rather than locally on a machine.
