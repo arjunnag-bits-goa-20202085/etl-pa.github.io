@@ -14,22 +14,6 @@ The dataset of choice for this project is a series of tables provided by the Bra
 
 
 # Methodology
-Here, we built an ETL pipeline using airflow in order to load the required data and script into S3 data lake.
+Here, I built an ETL pipeline using airflow in order to load the required data and script into S3 data lake.
 Then we scheduled the Dag in order to run the script into the EMR cluster by adding job flow steps using boto3 library.
 So here we scuccessfully incorporated AWS EMR into the pipeline to run the Spark job on a cluster instead of locally on a machine.
-
-![](https://github.com/khushal2405/ETL-pipeline-using-Airflow-and-AWS-EMR/blob/main/DAG_graph.PNG)
-
-Feel free to check the Dag script!!!
-# for more details and help please refer to these following links:
-https://github.com/ajupton/big-data-engineering-project
-
-https://www.startdataengineering.com/post/how-to-submit-spark-jobs-to-emr-cluster-from-airflow/
-
-https://github.com/josephmachado/spark_submit_airflow
-
-# Room for Improvement
-1. Here in this script rather than using hardcoded values, we can use agparser in order to parse parameters and use them while execution.
-2. We could also use step functions in AWS EMR to execute the same project.
- 
-
