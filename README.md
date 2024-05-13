@@ -1,5 +1,5 @@
 # ETL Pipeline Using Airflow and AWS EMR Cluster
-I developed an ETL pipeline using Airflow that performs the following tasks: It downloads data from an AWS S3 bucket, triggers a remote Spark/Spark SQL job on an AWS EMR cluster to process the downloaded data, and generates a cleaned dataset highlighting orders missing delivery deadlines. This cleaned dataset is then uploaded back to the same S3 bucket, organized in a folder designed for advanced analytics."
+I developed an ETL pipeline using Airflow that performs the following tasks: It downloads data from an AWS S3 bucket, triggers a remote Spark/Spark SQL job on an AWS EMR cluster to process the downloaded data, and generates a cleaned dataset highlighting orders missing delivery deadlines. This cleaned dataset is then uploaded back to the same S3 bucket, organized in a folder designed for advanced analytics.
 
 # Problem Statement
 Retailers in the current landscape are adapting to the digital age. Digital retail giants have carved out substantial market shares online, while traditional retail stores are generally in decline. In this era of digital transformation, adopting an omni-channel retail strategy is essential to stay competitive. This is particularly crucial for retailers with a large network of brick-and-mortar stores or those with strong ties to physical retail partners.
@@ -10,7 +10,7 @@ The project involves a series of ETL jobs programmed using Python, SQL, Airflow,
 
 
 # Dataset of Choice
-The dataset chosen for this project consists of a series of tables provided by the Brazilian e-commerce company, Olist."
+The dataset chosen for this project consists of a series of tables provided by the Brazilian e-commerce company, Olist.
 
 
 # Methodology
